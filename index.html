@@ -8,9 +8,6 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <title>Natur's Platter</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -22,6 +19,10 @@
       rel="stylesheet"
     />
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Nature's Platter</title>
+
     <style>
       .sora {
         font-family: "Sora", serif;
@@ -29,42 +30,218 @@
     </style>
   </head>
   <body class="sora">
-    <main class="md:container mx-auto">
+    <main class="container md:container mx-auto">
       <!-- Header section -->
       <nav>
         <div class="navbar bg-base-100">
-          <div class="navbar ">
-            <header><img src="./c2-assets/logo-header.png" alt="" />
-            
+          <div class="navbar">
+            <header>
+              <img
+                class="md:hidden"
+                src="./c2-assets/header-mobile.png"
+                alt=""
+              />
+              <img
+                class="hidden md:block"
+                src="./c2-assets/logo-header.png"
+                alt=""
+              />
             </header>
-            
-        </div>
-        
+          </div>
+          <!-- Menu list -->
           <div class="navbar-center hidden md:flex">
-            <ul class="menu menu-horizontal px-1 text-[#111111]">
-                <li><a>Product</a></li>
-                
-            </li>
-            <li><a>Services</a></li>
-            <li><a>Contact Us</a></li>
+            <ul class="menu menu-horizontal px-1 text-[#111111] text-sm">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact Us</a></li>
             </ul>
           </div>
-
+          <!-- Button  -->
           <div class="hidden md:flex navbar-end gap-4">
-           <i class="fa-solid fa-magnifying-glass"> </i>
+            <i class="fa-solid fa-magnifying-glass"> </i>
             <i class="fa-solid fa-cart-shopping"></i>
-              <button class="py-2 px-6 rounded border border-[#179800] text-[#111111]">Login</button>
-              <button class="py-2 px-6 rounded   bg-[#179800] text-white">Register</button>
-              
-            </div>
-            <div class="flex md:hidden justify-evenly w-2">
-           
-              <button><i class="fa-solid fa-bars "></i></button>
-            
-           
+            <button
+              class="py-2 px-6 rounded border border-[#179800] text-[#111111] text-sm"
+            >
+              Login
+            </button>
+            <button class="py-2 px-6 rounded bg-[#179800] text-white text-sm">
+              Register
+            </button>
+          </div>
+          <div class="flex md:hidden justify-between">
+            <button class="text-[#179800]">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
         </div>
       </nav>
+
+      <!-- Hero section -->
+      <section class="space-y-2 mt-14">
+        <h1 class="text-center text-black text-4xl font-bold">
+          Freshness <span class="text-[#179800]">You Can Count <br /></span> On,
+          Prices You'll Love!
+        </h1>
+        <p class="text-gray-600 text-center">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+        <div class="w-full lg:h-[838px] lg:w-[1030px] mx-auto">
+          <img
+            class="w-full object-cover"
+            src="./c2-assets/hero-vegetables.png"
+            alt="hero image"
+          />
+        </div>
+      </section>
+
+      <!-- Services section -->
+      <section>
+        <h1 class="text-[#179800] text-4xl mt-28 ml-4">Services</h1>
+        <div class="grid place-items-center md:grid-cols-1 lg:grid-cols-3">
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./c2-assets/service.png"
+                alt="Services"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services</h2>
+              <p class="text-gray-500">
+                Our 24/7 services ensure you're never left waiting. No matter
+                the time of day or night, we're here to help with all your
+                needs—anytime, anywhere.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./c2-assets/delivery.png"
+                alt="Services"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Fast Delivery</h2>
+              <p class="text-gray-500">
+                Get your favorite vegetables delivered straight to your door
+                with our super-fast delivery service. Whether it's a last-minute
+                fresh and on time—every time!
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./c2-assets/healthy.png"
+                alt="Services"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Healthy Products</h2>
+              <p class="text-gray-500">
+                At Nature's Platter, we offer only the freshest, most nutritious
+                vegetables, handpicked to fuel your body and mind. Packed with
+                vitamins nature has to offer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seasonal Vegetables section -->
+      <section>
+        <h1 class="text-[#179800] text-4xl mt-28">Seasonal Vegetables</h1>
+        <div
+          class="grid place-items-center md:grid-cols-2 lg:grid-cols-4 mt-10 gap-4"
+        >
+          <div class="card bg-[#7ab171] w-86 shadow-xl">
+            <figure>
+              <img src="./c2-assets/summer.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Summer
+                <div class="badge badge-secondary">NEW</div>
+              </h2>
+              <p class="text-gray-600">
+                Summer vegetables, grown naturally to bring you the freshest,
+                most nutritious produce. From crisp cucumbers to juicy tomatoes
+                and tender okra
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Summer</div>
+                <div class="badge badge-outline">Products</div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#7ab171] w-86 shadow-xl">
+            <figure>
+              <img src="./c2-assets/winter.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Winter
+                <div class="badge badge-secondary">NEW</div>
+              </h2>
+              <p class="text-gray-600">
+                Winter vegetables, grown naturally to bring you the freshest,
+                most nutritious produce. From crisp cucumbers to juicy tomatoes
+                and tender okra
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Winter</div>
+                <div class="badge badge-outline">Products</div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#7ab171] w-86 shadow-xl">
+            <figure>
+              <img class="w-full" src="./c2-assets/eggplant.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Eggplant
+                <div class="badge badge-secondary">NEW</div>
+              </h2>
+              <p class="text-gray-600">
+                A climbing perennial plant that's widely cultivated in tropical
+                countries , naturally to bring you the freshest and handpicked
+                vegetables by farmers with care and love!
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Winter</div>
+                <div class="badge badge-outline">Products</div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#7ab171] w-86 shadow-xl">
+            <figure>
+              <img src="./c2-assets/zucchini.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Summer!
+                <div class="badge badge-secondary">NEW</div>
+              </h2>
+              <p class="text-gray-600">
+                Summer vegetables, grown naturally to bring you the freshest,
+                most nutritious produce. From crisp cucumbers to juicy tomatoes
+                and tender okra
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Winter</div>
+                <div class="badge badge-outline">Products</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
